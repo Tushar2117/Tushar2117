@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+}
+.logo img{
+        
+        width: 27%;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin: 5px;
+
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.nav-list {
+        width: 70%;
+        display: flex;
+        padding:5px 5px ;
+        align-items: center;
+        font-size: 25px;
+
+}
+.nav-list li{
+    padding: 20px 25px;
+    list-style: none;
+    font-size: 25px;
+
+}
+
+.nav-list li a{
+            text-decoration: none;
+            color: white;
+            
+}
+.nav-list li a:hover{
+    color:grey       
+}
+a{
+text-decoration:none;
+color:black;
+cursor:pointer;
+
+
+}
+a:hover{
+color:blue;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 25px;
+
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.background{
+        background: rgba(0, 0, 0, 0.7) url('back2.jpg') ;
+        background: cover;
+        background-blend-mode: lighten;
+        
+}
+.firstsection{
+    height: 100vh;
+}
+.background1{
+    background: rgba(0, 0, 0, 0.7) url('new2.jpg');
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.background2{
+    background: rgba(0, 0, 0, 0.7) url('back2.jpg');
+   
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+    flex-direction: row;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+        width: 35%;
+        text-align: center;
+        
+}
+
+.secondHalf img{
+    width: 120%;
+    border: 1px solid cornsilk;
+    border-radius: 60%;
+    display: block;
+    margin: 1px;
+}
+
+.text-big{
+    font-size: 50px;
+}
+.text-small{
+    font-size: 30px;
+
+}
+.btn{
+    padding:8px 20px;
+    margin: 8px 3px;
+    border-radius:8px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2{
+
+    border: 1px solid black;
+    background-color:trasparent;
+    color: black;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;  
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.button-dark{
+    color: black;
+    border: 2px solid gray;  
+    align-items: center;
+}
+.section{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Phudu', cursive;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 29px;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.text-footer{
+    text-align: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+.brand img{
+    width: 10%;
+    margin: 5px 5px;
+    height: 10%;
+   padding: 5px 80px;
+    flex-direction: column;
+}
+table ,th,td{
+    padding: 10px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+
+}
+
+
+@media only screen and (max-width:800px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 450px;
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display:block;
+    }
+    .h-nav-resp{
+        height: 70px;   
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .button2{
+       
+       
+        
+
+    } 
+    .background2{
+        max-width: 100%;
+    }
+    .logo{
+        width: 50%;
+    }
+    .brand{
+
+        flex-direction:;
+    }
+}
